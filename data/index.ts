@@ -7,10 +7,20 @@ export const navItems = [
   
   export const gridItems = [
     {
+      id: 0,
+      title: "I prioritize client collaboration, fostering open communication ",
+      description: "",
+      className: "lg:col-span-5 md:col-span-6 md:row-span-4",
+      imgClassName: "w-full h-full",
+      titleClassName: "justify-end",
+      img: "/b1.svg",
+      spareImg: "",
+    },
+    {
       id: 1,
       title: "I prioritize client collaboration, fostering open communication ",
       description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/b1.svg",
