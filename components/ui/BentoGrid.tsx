@@ -51,7 +51,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden",
+        id === 0 ? 'row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 relative overflow-visible' : 'row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden', 
         className
       )}
       style={{
@@ -59,11 +59,12 @@ export const BentoGridItem = ({
         backgroundColor:'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)'
       }}>
 
-        <div className={`${id === 6 ? "flex justify-center items-center" : ""} ${ id === 0 ? "flex justify-center items-center" : "" } h-full`}>
+        <div className={`${id === 6 ? "flex justify-center items-center" : ""} ${ id === 0 ? "flex justify-center items-center relative" : "" } h-full`}>
 
-            <div className="w-full h-full absolute overflow-hidden top-0 left-0">
+            <div className={`{id===0 && relative} w-full h-full absolute top-0 left-0`}>
                 {img &&(
-                    <img src={img} alt={img} className={cn(imgClassName, 'object-cover object-center h-full')} />
+                    <img src={img} alt={img} className={cn(imgClassName,
+                        id === 0 ? 'object-cover object-center h-[120px]' : 'object-cover object-center h-full')} />
                 )}
             </div>
 
@@ -85,11 +86,11 @@ export const BentoGridItem = ({
 
             <div className={cn( titleClassName, "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 group-hover/bento:z-10")}>
 
-                <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                <div className={`${id === 0 ? 'md:max-w-full md:pt-2 pt-4' : 'md:max-w-32'} font-sans font-extralight  md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10`}>
                     {description}
                 </div>
 
-                <div className={`${id === 0 && 'max-w-full'} font-sans text-lg lg:text-3xl max-w-96 font-bold hover:z-10 z-10`}>
+                <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold hover:z-10 z-10">
                     {title}
                 </div>
 

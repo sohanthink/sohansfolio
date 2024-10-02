@@ -8,12 +8,12 @@ export const navItems = [
   export const gridItems = [
     {
       id: 0,
-      title: "I am sohan a dedicated softwere developer working as a website developer and continous leraning with good skillset of problem solving.",
-      description: "nice",
+      title: "",
+      description: "Meet Sohan, a dynamic and innovative software developer with a strong foundation in technology. Sohan has completed a Bachelor's of Science (BSc) in the field of technology, honing skills that span across various aspects of programming and software development. With a fervent passion for coding and creating cutting-edge software solutions, Sohan is committed to driving technological advancements and delivering high-quality applications.",
       className: "lg:col-span-5 md:col-span-6 md:row-span-4 w-full",
-      imgClassName: "w-full h-full",
-      titleClassName: "w-full",
-      // img: "/b1.svg",
+      imgClassName: "absolute -top-[25px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#cbacf9] border-4 rounded-full",
+      titleClassName: "text-center",
+      img: "/profile-transparent.png",
       spareImg: "",
     },
     {
