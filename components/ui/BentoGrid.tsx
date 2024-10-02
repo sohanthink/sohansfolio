@@ -5,6 +5,8 @@ import {GridGlobe} from "./GridGlobe";
 import { MotionGlobalConfig } from "framer-motion";
 import TechStack from "./TechStack";
 import { BackgroundBeamsWithCollision } from "./BgCollison";
+import Lottie from "./LottieAnimation";
+import LottieAnimation from "./LottieAnimation";
 
 export const BentoGrid = ({
   className,
@@ -59,9 +61,9 @@ export const BentoGridItem = ({
         backgroundColor:'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)'
       }}>
 
-        <div className={`${id === 6 ? "flex justify-center items-center" : ""} ${ id === 0 ? "flex justify-center items-center relative" : "" } h-full`}>
+        <div className={`${id === 6 ? "flex flex-col justify-center items-center" : ""} ${ id === 0 ? "flex justify-center items-center relative" : "" } h-full`}>
 
-            <div className={`{id===0 && relative} w-full h-full absolute top-0 left-0`}>
+            <div className={`{id === 0 && relative} w-full h-full absolute top-0 left-0`}>
                 {img &&(
                     <img src={img} alt={img} className={cn(imgClassName,
                         id === 0 ? 'object-cover object-center h-[120px]' : 'object-cover object-center h-full')} />
@@ -116,6 +118,10 @@ export const BentoGridItem = ({
                     <TechStack/>
                 )
             }
+
+            {id === 6 && (<LottieAnimation/>)}
+
+
 
         </div>
     </div>
