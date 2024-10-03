@@ -33,12 +33,12 @@ const Hero = () => {
               Dynamic Web Magic with Next.js
           </p>
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Transforming Concepts into Seamless User Experiences."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p className='text-center text-sm md:text-lg'>Hi! I&apos;m Sohan, A Full-Stack Developer based in Bangladesh.
           </p>
-          <MagicButton title='Learn More' icon={<BsArrowDownCircle />} position='right'/>
+          <MagicButton title='See my work' icon={<BsArrowDownCircle />} position='right'/>
         </div>
       </div>
 

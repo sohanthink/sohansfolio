@@ -28,7 +28,7 @@ const LottieAnimation = () => {
 
   return (
     <div className="mt-5 relative">
-      <div className={`absolute -bottom-5 -left-[143px] mb-5 ${copied ? "block" : "block" }`}>
+      <div className={`absolute -bottom-5 -left-[127px] md:-left-[143px] mb-5 ${copied ? "block" : "block" }`}>
           <Lottie options={defaultOptions} height={200} width={400} />
           <MagicButton
           title={copied ? "Email is Copied!" : "Copy my email address"}
