@@ -8,12 +8,12 @@ export const navItems = [
   export const gridItems = [
     {
       id: 0,
-      title: "",
-      description: "Meet Sohan, a dynamic and innovative software developer with a strong foundation in technology. Sohan has completed a Bachelor's of Science (BSc) in the field of technology, honing skills that span across various aspects of programming and software development. With a fervent passion for coding and creating cutting-edge software solutions, Sohan is committed to driving technological advancements and delivering high-quality applications.",
+      title: "Meet Sohan, a passionate software developer with a BSc in technology, specializing in innovative, high-quality solutions that drive progress and empower businesses through cutting-edge applications.",
+      description: "",
       className: "lg:col-span-5 md:col-span-6 md:row-span-4 w-full",
       imgClassName: "absolute -top-[25px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#cbacf9] border-4 rounded-full",
       titleClassName: "text-center",
-      img: "/profile-transparent.png",
+      img: "/sohan-gridBG.png",
       spareImg: "",
     },
     {
