@@ -31,12 +31,12 @@ const LottieAnimation = () => {
       <div className={`absolute -bottom-5 -left-[127px] md:-left-[143px] mb-5 ${copied ? "block" : "block" }`}>
           <Lottie options={defaultOptions} height={200} width={400} />
           <MagicButton
-          title={copied ? "Email is Copied!" : "Copy my email address"}
-          icon={<IoCopyOutline />}
-          position="left"
-          handleClick={handleCopy}
-          otherClasses="!bg-[#161A31] nowrap z-50"
-        />
+            title={copied ? "Email is Copied!" : "Copy my email address"}
+            icon={<IoCopyOutline />}
+            position="left"
+            handleClick={handleCopy}
+            otherClasses="!bg-[#161A31] nowrap z-50"
+          />
       </div>
    </div>
   )
