@@ -11,9 +11,9 @@ export const navItems = [
       title: "Meet Sohan, a passionate software developer with a BSc in technology, specializing in innovative, high-quality solutions that drive progress and empower businesses through cutting-edge applications.",
       description: "",
       className: "lg:col-span-5 md:col-span-6 md:row-span-4 w-full",
-      imgClassName: "absolute -top-[25px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#cbacf9] border-4 rounded-full",
+      imgClassName: "absolute -top-[25px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[#cbacf9] border-[2px] rounded-full",
       titleClassName: "text-center",
-      img: "/sohan-gridBG.png",
+      img: "/sohan-gridBG2.png",
       spareImg: "",
     },
     {
